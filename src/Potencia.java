@@ -1,4 +1,5 @@
 public class Potencia {
+    
     public int sacarResultado(int numero, int exponente){
         int resultado=1;
         if(exponente>0){
