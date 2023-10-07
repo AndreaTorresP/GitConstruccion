@@ -2,15 +2,17 @@ import java.util.Scanner;
 
 public class Calculadora {
     public static void main(String[] args) throws Exception {
-        Scanner valorTerminal = new Scanner(System.in);
+        Scanner numeroTerminal = new Scanner(System.in);
+        Scanner operacionTerminal = new Scanner(System.in);
 
         System.out.print("Primer número: ");
-        double primerNum = valorTerminal.nextDouble();
+        double primerNum = numeroTerminal.nextDouble();
         System.out.print("Segundo número: ");
-        double segundoNum = valorTerminal.nextDouble();
+        double segundoNum = numeroTerminal.nextDouble();
         System.out.print("Operación: ");
-        String operacion = valorTerminal.nextLine();
-        valorTerminal.close();
+        String operacion = operacionTerminal.nextLine();
+        numeroTerminal.close();
+        operacionTerminal.close();
 
         double resultadoOperacion = 0;
         if(operacion.equals("suma"));
