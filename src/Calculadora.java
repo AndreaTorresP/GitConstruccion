@@ -17,9 +17,9 @@ public class Calculadora {
         double resultadoOperacion = 0;
         if (operacion.equals("suma"))
             ;
-        else if (operacion.equals("resta")) {
+        else if (operacion.equals("resta"))
             resultadoOperacion = Resta(primerNum, segundoNum);
-        } else if (operacion.equals("multiplicacion"))
+        else if (operacion.equals("multiplicacion"))
             ;
         else if (operacion.equals("division"))
             ;
