@@ -18,9 +18,27 @@ public class Calculadora {
         else if(operacion.equals("multiplicacion"));
         else if(operacion.equals("division"));
         else if(operacion.equals("modulo"));
-        else if(operacion.equals("potencia"));
+        else if(operacion.equals("potencia"))
+            ;
         else System.out.println("Operacion no encontrada");
 
         System.out.println(resultadoOperacion);
     }
+
+    /*public int sacarPotencia(int numero, int exponente){
+        int resultado=1;
+        if(exponente>0){
+            for(int i=0; i<exponente; i++){
+                resultado = resultado*numero;
+            }
+        }
+        else if(exponente<0){
+            //mensaje de invalido?
+        }
+
+        double resultado = Math.pow(num, num2);
+        System.out.println(resultado);
+
+        return resultado;
+    }*/
 }
