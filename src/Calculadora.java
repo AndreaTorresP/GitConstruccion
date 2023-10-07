@@ -5,14 +5,14 @@ public class Calculadora {
         Scanner valorTerminal = new Scanner(System.in);
 
         System.out.print("Primer número: ");
-        int primerNum = valorTerminal.nextInt();
+        double primerNum = valorTerminal.nextDouble();
         System.out.print("Segundo número: ");
-        int segundoNum = valorTerminal.nextInt();
+        double segundoNum = valorTerminal.nextDouble();
         System.out.print("Operación: ");
         String operacion = valorTerminal.nextLine();
         valorTerminal.close();
 
-        float resultadoOperacion = 0;
+        double resultadoOperacion = 0;
         if(operacion.equals("suma"));
         else if(operacion.equals("resta"));
         else if(operacion.equals("multiplicacion"));
