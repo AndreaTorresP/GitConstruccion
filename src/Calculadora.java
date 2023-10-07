@@ -2,15 +2,17 @@ import java.util.Scanner;
 
 public class Calculadora {
     public static void main(String[] args) throws Exception {
-        Scanner valorTerminal = new Scanner(System.in);
+        Scanner numeroTerminal = new Scanner(System.in);
+        Scanner operacionTerminal = new Scanner(System.in);
 
         System.out.print("Primer número: ");
-        double primerNum = valorTerminal.nextDouble();
+        double primerNum = numeroTerminal.nextDouble();
         System.out.print("Segundo número: ");
-        double segundoNum = valorTerminal.nextDouble();
+        double segundoNum = numeroTerminal.nextDouble();
         System.out.print("Operación: ");
-        String operacion = valorTerminal.nextLine();
-        valorTerminal.close();
+        String operacion = operacionTerminal.nextLine();
+        numeroTerminal.close();
+        operacionTerminal.close();
 
         double resultadoOperacion = 0;
         if(operacion.equals("suma"));
@@ -19,26 +21,14 @@ public class Calculadora {
         else if(operacion.equals("division"));
         else if(operacion.equals("modulo"));
         else if(operacion.equals("potencia"))
-            ;
+            resultadoOperacion = calcularPotencia(primerNum, segundoNum);
         else System.out.println("Operacion no encontrada");
 
         System.out.println(resultadoOperacion);
     }
 
-    /*public int sacarPotencia(int numero, int exponente){
-        int resultado=1;
-        if(exponente>0){
-            for(int i=0; i<exponente; i++){
-                resultado = resultado*numero;
-            }
-        }
-        else if(exponente<0){
-            //mensaje de invalido?
-        }
-
-        double resultado = Math.pow(num, num2);
-        System.out.println(resultado);
-
+    public static double calcularPotencia(double base, double exponente){
+        double resultado = Math.pow(base, exponente);
         return resultado;
-    }*/
+    }
 }
