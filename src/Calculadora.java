@@ -19,7 +19,7 @@ public class Calculadora {
             double resultadoOperacion = 0;
             switch (tipoOperacion) {
                 case Op_SUMA:
-                    //funcion suma
+                    resultadoOperacion = suma(primerNum, segundoNum);
                     break;
                 case Op_RESTA: 
                     //funcion resta
@@ -55,5 +55,10 @@ public class Calculadora {
             System.out.println("4.- División");
             System.out.println("5.- Módulo");
             System.out.println("6.- Potencia");
+    }
+
+    public static double suma(double primerSumando, double segundoSumando){
+        double total = primerSumando + segundoSumando;
+        return total;
     }
 }
