@@ -25,7 +25,7 @@ public class Calculadora {
                     //funcion resta
                     break;
                 case Op_MULTIPLICACION:
-                    //funcion multiplicacion
+                    resultadoOperacion = multiplicacion(primerNum, segundoNum);
                     break;
                 case Op_DIVISION:
                     //funcion division
@@ -55,5 +55,10 @@ public class Calculadora {
             System.out.println("4.- División");
             System.out.println("5.- Módulo");
             System.out.println("6.- Potencia");
+    }
+
+    public static double multiplicacion(double multiplicando, double multiplicador){
+        double producto = multiplicando * multiplicador;
+        return producto;
     }
 }
