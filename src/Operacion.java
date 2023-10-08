@@ -1,0 +1,3 @@
+public enum Operacion{
+    Op_SUMA, Op_RESTA, Op_MULTIPLICACION, Op_DIVISION, Op_MODULO, Op_POTENCIA;
+}
