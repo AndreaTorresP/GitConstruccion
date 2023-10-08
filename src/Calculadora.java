@@ -34,7 +34,8 @@ public class Calculadora {
        if(dividendo>0){
             resultadoDivision = divisor/dividendo;
             return resultadoDivision;
-       }
+       }else{
        return 0;
+       }
 }
 }
