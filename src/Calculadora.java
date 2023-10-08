@@ -20,7 +20,6 @@ public class Calculadora {
             switch (tipoOperacion) {
                 case Op_SUMA:
                     resultadoOperacion = suma(primerNum, segundoNum);
-                    System.out.println("El resultado de la suma es :" + resultadoOperacion);
                     break;
                 case Op_RESTA: 
                     //funcion resta
