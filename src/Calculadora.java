@@ -22,7 +22,7 @@ public class Calculadora {
                     // funcion suma
                     break;
                 case Op_RESTA:
-                    resultadoOperacion = Resta(primerNum, segundoNum);
+                    resultadoOperacion = resta(primerNum, segundoNum);
                     break;
                 case Op_MULTIPLICACION:
                     // funcion multiplicacion
