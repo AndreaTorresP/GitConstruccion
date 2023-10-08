@@ -20,7 +20,7 @@ public class Calculadora {
         else if(operacion.equals("resta"));
         else if(operacion.equals("multiplicacion"));
         else if(operacion.equals("division")){
-            resultadoOperacion = calcularDivision(primerNum, segundoNum);
+            resultadoOperacion = division(primerNum, segundoNum);
         }
         else if(operacion.equals("modulo"));
         else if(operacion.equals("potencia"));
@@ -29,7 +29,7 @@ public class Calculadora {
         System.out.println(resultadoOperacion);
     }
 
-    public static double calcularDivision(double divisor, double dividendo){
+    public static double division(double divisor, double dividendo){
         double resultadoDivision;
        if(dividendo>0){
             resultadoDivision = divisor/dividendo;
