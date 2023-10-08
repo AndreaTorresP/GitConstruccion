@@ -55,7 +55,7 @@ public class Calculadora {
         System.out.println("6.- Potencia");
     }
 
-    public static double Resta(double minuendo, double sustraendo) {
+    public static double resta(double minuendo, double sustraendo) {
         double diferencia = minuendo - sustraendo;
         return diferencia;
     }
