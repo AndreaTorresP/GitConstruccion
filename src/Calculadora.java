@@ -34,7 +34,7 @@ public class Calculadora {
                     //funcion modulo
                     break;
                 case Op_POTENCIA:  
-                    //funcion potencia
+                    resultadoOperacion = potencia(primerNum, segundoNum);
                     break;
             }
             System.out.println(resultadoOperacion);
@@ -55,5 +55,10 @@ public class Calculadora {
             System.out.println("4.- División");
             System.out.println("5.- Módulo");
             System.out.println("6.- Potencia");
+    }
+
+    public static double potencia(double base, double exponente){
+        double resultado = Math.pow(base, exponente);
+        return resultado;
     }
 }
